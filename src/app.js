@@ -35,7 +35,10 @@ app.get('/',(req,res) => {
 })
 
 app.post('/',(req,res) => {
-    res.send("received request");
+    res.render('download', {
+            title: 'Smash Template',
+            name: 'Dullfin',
+        })
     module.exports.tournamentNumber = req.body.tournamentNumber;
 
     module.exports.color1 = req.body.color1;
@@ -71,6 +74,13 @@ app.post('/',(req,res) => {
     module.exports.user8 = req.body.user8;
 
     jimpFunction.jimpReplace();
+})
+
+app.get('/download', (req,res) => {
+    var filePath = "../images"
+    var fileName = "stockPhotoTest.png"
+    res.sendFile('../images/stockPhotoTest.png', {headers: {'Content-Type': 'image/png'}});
+    res.send('Success...hopefully.');
 })
 
 // Port to listen on.
