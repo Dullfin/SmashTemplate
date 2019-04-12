@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your Smash Template!</p>
+
+        <form method="POST" action="/" novalidate>
+            Tournament Number<input name="tournamentNumber">
+            </br>
+            1st<input name="user1">       
+            <select name ="color1">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character1">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <br>
+            2nd<input name="user2">
+            <select name ="color2">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character2">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <br>
+            3rd<input name="user3">
+            <select name ="color3">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character3">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <br>
+            4th<input name="user4">
+            <select name ="color4">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character4">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <br>
+            5th<input name="user5">
+            <select name ="color5">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character5">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <br>
+            6th<input name="user6">
+            <select name ="color6">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character6">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <br>
+            7th<input name="user7">
+            <select name ="color7">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character7">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <br>
+            8th<input name="user8">
+            <select name ="color8">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="bow">Bow</option>
+                <option value="brown">Brown</option>
+                <option value="Crazy">Crazy</option>
+                <option value="crown">Crown</option>
+                <option value="cyan">Cyan</option>
+                <option value="daisy">Daisy</option>
+                <option value="flower">Flower</option>
+                <option value="Giga">Giga</option>
+                <option value="green">Green</option>
+                <option value="headband">Headband</option>
+                <option value="lavender">Lavender</option>
+                <option value="neutral">Neutral</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <select name="character8">
+                <option value="Bowser">Bowser</option>
+                <option value="Captain Falcon">Captain Falcon</option>
+                <option value="Doctor Mario">Doctor Mario</option>
+                <option value="Donkey Kong">Donkey Kong</option>
+                <option value="Falco">Falco</option>
+                <option value="Fox">Fox</option>
+                <option value="Ganondorf">Ganondorf</option>
+                <option value="Hand">Hand</option>
+                <option value="Ice Climbers">Ice Climbers</option>
+                <option value="Jigglypuff">Jigglypuff</option>
+                <option value="Kirby">Kirby</option>
+                <option value="Link">Link</option>
+                <option value="Luigi">Luigi</option>
+                <option value="Mario">Mario</option>
+                <option value="Marth">Marth</option>
+                <option value="Mewtwo">Mewtwo</option>
+                <option value="Mr. Game & Watch">Mr. Game and Watch</option>
+                <option value="Ness">Ness</option>
+                <option value="Peach">Peach</option>
+                <option value="Pichu">Pichu</option>
+                <option value="Pikachu">Pikachu</option>
+                <option value="Roy">Roy</option>
+                <option value="Samus">Samus</option>
+                <option value="Yoshi">Yoshi</option>
+                <option value="Young Link">Young Link</option>
+                <option value="Zelda">Zelda</option>
+            </select>
+            <button id="submit">Submit</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+    </div>
+
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
