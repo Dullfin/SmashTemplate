@@ -21,7 +21,7 @@ When using this program in it's current state, invalid selections can cause prob
 `Falco: Blue, Green, Neutral, Red`
 `Fox: Blue, Green, Neutral, Red`
 `Ganondorf: Blue, Green, Neutral, Purple, Red`
-`Hand`: Crazy, Master
+`Hand: Crazy, Master`
 `Ice Climbers: Green, Neutral, Orange, Red`
 `Jigglypuff: Bow, Crown, Flower, Headband, Neutral`
 `Kirby: Blue, Green, Neutral, Red, Yellow`
