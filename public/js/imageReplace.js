@@ -1,6 +1,22 @@
 var Jimp = require('jimp');
 var serverSide = require('../../src/app');
 
+var backgroundImg = '../images/UATH_Top_8.png';
+var fontPath = '../fonts/DINBlackAlternate.fnt';
+var titleHorizontal = 730;
+var titleVertical = 10;
+var imgHorizontal = 1100;
+var fontHorizontal = 860;
+var posVertical1 = 200;
+var posVertical2 = posVertical1 + 75;
+var posVertical3 = posVertical2 + 75;
+var posVertical4 = posVertical3 + 75;
+var posVertical5 = posVertical4 + 75;
+var posVertical6 = posVertical5 + 75;
+var posVertical7 = posVertical6 + 75;
+var posVertical8 = posVertical7 + 75;
+var stockResize = 32;
+
 module.exports.jimpReplace = function () {
     const tournamentNumber = serverSide.tournamentNumber;
 
@@ -62,31 +78,31 @@ module.exports.jimpReplace = function () {
                                                         .then((img7) => {
                                                             Jimp.read(iconPath8)
                                                                 .then((img8) => {
-
-                                                                    Jimp.read('../images/stockPhoto612.jpg')
+                                                                    Jimp.read(backgroundImg)
                                                                         .then((image) => {
-                                                                            Jimp.loadFont(Jimp.FONT_SANS_32_BLACK)
+                                                                            image.resize(1920,1080);
+                                                                            Jimp.loadFont(fontPath)
                                                                             .then(font => {
                                                                                 image.clone()
-                                                                                .print(font, Jimp.HORIZONTAL_ALIGN_CENTER, Jimp.VERTICAL_ALIGN_TOP, 'Louisiana Weekly #' + tournamentNumber)
+                                                                                .print(font, titleHorizontal, titleVertical, tournamentNumber)
 
-                                                                                .print(font, 200, 50, user1)
-                                                                                .print(font, 200, 90, user2)
-                                                                                .print(font, 200, 130, user3)
-                                                                                .print(font, 200, 170, user4)
-                                                                                .print(font, 200, 210, user5)
-                                                                                .print(font, 200, 250, user6)
-                                                                                .print(font, 200, 290, user7)
-                                                                                .print(font, 200, 330, user8)
+                                                                                .print(font, fontHorizontal, posVertical1, user1)
+                                                                                .print(font, fontHorizontal, posVertical2, user2)
+                                                                                .print(font, fontHorizontal, posVertical3, user3)
+                                                                                .print(font, fontHorizontal, posVertical4, user4)
+                                                                                .print(font, fontHorizontal, posVertical5, user5)
+                                                                                .print(font, fontHorizontal, posVertical6, user6)
+                                                                                .print(font, fontHorizontal, posVertical7, user7)
+                                                                                .print(font, fontHorizontal, posVertical8, user8)
                                                                                 
-                                                                                .composite(img1, 400, 50)
-                                                                                .composite(img2, 400, 90)
-                                                                                .composite(img3, 400, 130)
-                                                                                .composite(img4, 400, 170)
-                                                                                .composite(img5, 400, 210)
-                                                                                .composite(img6, 400, 250)
-                                                                                .composite(img7, 400, 290)
-                                                                                .composite(img8, 400, 330)
+                                                                                .composite(img1.resize(stockResize, stockResize), imgHorizontal, posVertical1)
+                                                                                .composite(img2.resize(stockResize,stockResize), imgHorizontal, posVertical2)
+                                                                                .composite(img3.resize(stockResize,stockResize), imgHorizontal, posVertical3)
+                                                                                .composite(img4.resize(stockResize,stockResize), imgHorizontal, posVertical4)
+                                                                                .composite(img5.resize(stockResize,stockResize), imgHorizontal, posVertical5)
+                                                                                .composite(img6.resize(stockResize,stockResize), imgHorizontal, posVertical6)
+                                                                                .composite(img7.resize(stockResize,stockResize), imgHorizontal, posVertical7)
+                                                                                .composite(img8.resize(stockResize,stockResize), imgHorizontal, posVertical8)
                                                                                 .write('../images/stockPhotoTest.png')
                                                                             })
                                                                             
