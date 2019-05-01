@@ -15,7 +15,7 @@ var posVertical5 = posVertical4 + 75;
 var posVertical6 = posVertical5 + 75;
 var posVertical7 = posVertical6 + 75;
 var posVertical8 = posVertical7 + 75;
-var stockResize = 32;
+var stockResize = 64;
 
 module.exports.jimpReplace = function () {
     const tournamentNumber = serverSide.tournamentNumber;
