@@ -11,6 +11,8 @@ Hosted on: http://localhost:3000
 or
 `nodemon app.js`
 
+Any design changes can be made by editing the values at the top of /public/js/imageReplace.js
+
 # Using the client
 When using this program in it's current state, invalid selections can cause problems. Here's a list of all valid colors for each character.
 
