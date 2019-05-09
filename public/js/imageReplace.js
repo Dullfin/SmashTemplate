@@ -3,11 +3,11 @@ var serverSide = require('../../src/app');
 
 var backgroundImg = '../images/UATH_Top_8.png';
 var fontPath = '../fonts/DINBlackAlternate.fnt';
-var titleHorizontal = 730;
-var titleVertical = 10;
-var imgHorizontal = 1100;
-var fontHorizontal = 860;
-var posVertical1 = 200;
+var titleHorizontal = 250;
+var titleVertical = 200;
+var imgHorizontal = 700;
+var fontHorizontal = 300;
+var posVertical1 = 325;
 var posVertical2 = posVertical1 + 75;
 var posVertical3 = posVertical2 + 75;
 var posVertical4 = posVertical3 + 75;
@@ -80,7 +80,7 @@ module.exports.jimpReplace = function () {
                                                                 .then((img8) => {
                                                                     Jimp.read(backgroundImg)
                                                                         .then((image) => {
-                                                                            image.resize(1920,1080);
+                                                                            image.resize(1058,1216);
                                                                             Jimp.loadFont(fontPath)
                                                                             .then(font => {
                                                                                 image.clone()
